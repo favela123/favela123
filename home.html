@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document pricipal</title>
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<style>
+*{
+
+    font-family: "nova fonte"}
+
+    .btn1:hover{
+        background: transparent;
+        color: #ffffff;
+        transform: scale(1.0) rotate(360deg);
+        box-shadow: 0 0 60px #0817e4;
+        cursor: grab;
+        border: 2px solid #0817e4;
+    }
+
+h3{
+    -webkit-text-stroke: .1vh #fff;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(10183715146547.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 10s ease alternate infinite;
+    margin-left: 36%;
+}
+@keyframes text {
+    from{
+        background-position: 0% 100%;
+    }    
+    to{
+        background-position: 100% ;
+    }
+}
+#navtransp{
+    background-color: rgba(245, 222, 179, 0) !important;
+}
+.p12{
+    color: white;
+}
+.glide2{
+    margin-left: 4%;
+}
+
+</style>
+<body onload = "logado(); startCountdown()" class="box-degrade">
+    <div class="container-fluid cores">
+        
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg mt-2 navcor" style="background-color: #e3f2fd;">
+                    
+                    <div class="container-fluid">
+
+                        
+                        
+                        <!-- <a class="navbar-brand">Locatudo</a> -->
+                        <h3>DK LOCACOES</h3>
+                        
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <span id="sessao" style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder; font-size: 25px;"></span>
+                        
+
+                        <!-- <div class="botao">
+                            <a href="carrinho.html">
+                                <button class="btn1">
+                                    Carrinho
+                                </button>
+                            </a>
+                        </div>
+                        <div class="botao">
+                            <a href="falecnsc.html">
+                                <button class="btn1">
+                                    Fale Conosco
+                                </button>
+                            </a>
+                        </div> -->
+                        
+                            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <form class="d-flex direita" role="search">
+                                    <button type="button" class="btn btn-light "><a href="login2.html" target="_blank">logar</a>
+                                    </button>
+                                </form>
+                            </div> -->
+                        
+                       
+                    </div>
+                </nav>
+                </nav>
+            </div>
+
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-light" id="navtransp" >
+                    <div class="container-fluid">
+                      <h2>Filmes</h2>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="carrinho.html" class="p12">Carrinho</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="falecnsc.html" class="p12">Fale Conosco</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="p12">
+                              Topicos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#acao">Acao</a></li>
+                              <li><a class="dropdown-item" href="#terror">Terror</a></li>
+                              <!-- <li><hr class="dropdown-divider"></li> -->
+                              <li><a class="dropdown-item" href="#romance">Romance</a></li>
+                            </ul>
+                          </li>                        
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row">
+                <div class="col-1 offset-8 ">
+                    <h4 class="letra2">Ola:</h4>
+                </div>
+
+                <div class="col-1">
+                    <h4 id="usuario" class="letra2"></h4>
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-center">
+                        <h2 class="letra2">Alugue Filmes de melhor qualidade com preço justo</h2>
+                    </div>
+                </div>   
+            </div>
+            <div class="row mt-3 mb-5">
+                <div class="glide">
+                    <div class="glide__track glide2" data-glide-el="track" >
+                        <ul class="glide__slides">
+                            <a href="sinopse madman .html">
+                                <li class="glide__slide"><img src="mad man.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse doutor est.html">
+                                <li class="glide__slide"><img src="dotor.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse mulher.html">
+                                <li class="glide__slide"><img src="muler maravilha.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse pantera copy 2.html">
+                                <li class="glide__slide"><img src="pantera.jpg" alt=""></li>
+                            </a>
+                            <a href="sinapse misery.html">
+                                <li class="glide__slide"><img src="miseria.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse terro eyes.html">
+                                <li class="glide__slide"><img src="terror eyes ll.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse terror Tales.html">
+                                <li class="glide__slide"><img src="terror 3.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse Spaceship.html">
+                                <li class="glide__slide"><img src="SPACESHIP.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse american romance .html">
+                                <li class="glide__slide"><img src="um romance americno.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse romance e cigarros .html">
+                                <li class="glide__slide"><img src="romance6.jpg" alt=""></li>
+                            </a>
+                            <a href="sinopse wildly.html">
+                                <li class="glide__slide"><img src="romance1.jpg" alt=""></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------------------------- -->
+
+        
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navcor">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="">
+                        <img src="AÇÃO.png" alt="" width="40" height="44" class="d-inline-block align-text-top">
+                        <h2 class="fonteae1" id="acao">ACaO</h2>
+                      </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="row mt-3 justify-content-center">
+            <div class="col mb-3">          
+                <div class="card3 cor2" style="width: 100%; height: 100%" >
+                    <a href="sinapse falcão.html"><img src="falcon.jpg" class="card-img-top cor2" id="img" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Soldado Invernal</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%"">
+                    <a href="sinopse doutor est.html"><img src="dotor.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height:100%">
+                        <hr>
+                        <p class="card-text forma1">Dotor Estranho</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+           
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinapse misery.html"><img src="miseria.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                     <hr>
+                        <p class="card-text forma1">Miseria</p>                        
+                    </div>    
+                </div>
+            </div>
+            
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse madman .html"><img src="mad man.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Mad Man</p>
+                        
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse pantera copy 2.html"><img src="pantera.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Pantera</p>
+                        
+             
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse mulher.html"><img src="muler maravilha.jpg" maravilha.jpg class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Mulher Maravilha</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------------------------- -->
+
+
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navcor">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="íncone.png" alt="" width="40" height="44" class="d-inline-block align-text-top">
+                        <h2 class="fonteae2" id="terror">TERROR</h2>
+                      </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 p-auto">
+            
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse terror 5.html"><img src="terror 1.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Terror 5</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card3 cor2 sm-4" style="width: 100%; height: 100%">
+                    <a href="sinopse Spaceship.html"><img src="terror 2.jpg" class="card-img-top cor2" alt="..." width="50%"></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Spaceship</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">                    
+                    <a href="sinopse terror Tales.html"><img src="terror 3.jpg" class="card-img-top cor2" alt="..."></a>
+                        <div class="card-body" style="width: 100%; height: 100%">
+                    
+                        <hr>
+                        <p class="card-text forma1">Terror Tales</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse the terror.html"><img src="terror 4.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">The Terror</p>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="terror e"><img src="terror 5.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Terror Eyes<p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3" mb-3>
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse terror firmer.html"><img src="terror 6.jpg" class="card-img-top cor2" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%"    >
+                        <hr>
+                        <p class="card-text forma1">Terror Firmer</p>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------------------------- -->
+        <div class="row">
+            <div class="col mb-3">
+                <nav class="navbar navcor">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="inconeromance.png" alt="" width="40" height="44" class="d-inline-block align-text-top">
+                        <h2 class="fonteae3" id="romance">Romance</h2>
+                      </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        
+
+        <div class="row mt- mb-4">
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse wildly.html"><img src="romance1.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Wildly Explicit</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinapse tHE ROMANCE COLLEGE.html"><img src="romance2.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">College romance 
+                            season 2
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse american romance .html"><img src="romance3.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">American romance</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse bad romance.html"><img src="romance4.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Bad romance</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse novel romance.html"><img src="romance5.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Novel romance</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col">
+                <div class="card3 cor2" style="width: 100%; height: 100%">
+                    <a href="sinopse romance e cigarros .html"><img src="romance6.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="width: 100%; height: 100%">
+                        <hr>
+                        <p class="card-text forma1">Romances e cigarettes</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script>
+                const config = {
+                    type: 'carousel',
+                    perView: 5,
+                    breakpoints: {
+                        800: {
+                            perView: 4
+                        },
+                        600: {
+                            perView: 3
+                        },
+                        380: {
+                            perView: 2
+                        }
+                    },
+                    autoplay: 2000,
+                };
+                new Glide('.glide', config).mount();
+            </script>
+<script src="cadastro.js"></script>
+<script src="temporizador.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: black solid 1px; */
+}
+
+.card-principal{
+    width:50% !important;
+    margin-top: 12%;
+    margin-left: 25%;
+}
+.movimento{
+    width: 180%;
+    margin-left: -22%;
+    margin-top: -32% ;
+}
+.container{
+    border:black solid 1px ;
+    margin-top: 9%;
+}
+.h11{
+    margin-left: 24%;
+}
+.posicao{
+    margin-left: 7% !important;
+    margin-top: 5%;
+}

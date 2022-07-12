@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinapse Falcão</title>
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* *{
+        border: black solid 1px;
+    } */
+
+    .altura{
+        margin-top: 2%;
+        padding: 14%;
+    }
+    h3{
+    -webkit-text-stroke: .1vh #fff;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(10183715146547.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 10s ease alternate infinite;
+    }
+
+@keyframes text {
+    from{
+        background-position: 0% 100%;
+    }    
+    to{
+        background-position: 100% ;
+    }
+}
+.box-degrade1{
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, blue,  cyan);
+        background-size: 500% 100%;
+        animation: degrade-animado 5s infinite alternate;
+    }
+    @keyframes degrade-animado {
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x: 100%;
+        }
+    }
+
+.cor{
+    background-color: rgba(100, 148, 237, 0);
+}
+.branco{
+    color: white;
+}
+</style>
+<body class="box-degrade1">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card1 text-center cor">
+                    <div class="card-header">
+                      <h3>Locatudo</h3>
+                    </div>
+                    <div>
+                        <h2 class="card-title branco">Doutor Estranho</h2>
+                    </div>
+                    <div class="card-body" id="card1">
+                      
+                      <img src="doutor estranho.webp" id="img" alt="" width="50%">
+                    </div>
+                      <hr>
+                    <h2 class="branco">Sinopse</h2>
+                      <br>
+                    <p class="card-text branco">
+                        Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.                         
+                    </p>
+                    <P class="branco" id="preço">R$ 10,00</P>
+                      <input type="number" id="qt" min="1" max="10">
+
+                      <a href="home.html" class="btn btn-primary branco" onclick="addfilme6()" id="carrinho">Carrinho</a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="zoom.js"></script>
+<script src="carrinho.js"></script>

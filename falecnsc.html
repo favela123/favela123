@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .card{
+
+        margin-left: 29%;
+        margin-top: 2%;
+        padding: 2%;
+        background-color: rgba(0, 0, 255, 0);
+
+    }
+    .img1{
+        background-image: url();
+    }
+    .box-degrade1{
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, blue,  cyan);
+        background-size: 500% 100%;
+        animation: degrade-animado 5s infinite alternate;
+    }
+    @keyframes degrade-animado {
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x: 100%;
+        }
+    }
+    .h3-2{
+        text-align: center;
+        margin-top: 12%;
+    }
+    .h3{
+    -webkit-text-stroke: .1vh #fff;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(10183715146547.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 10s ease alternate infinite;
+    }
+    @keyframes text {
+    from{
+        background-position: 0% 100%;
+    }    
+    to{
+        background-position: 100% ;
+    }
+}
+</style>
+<body class="box-degrade1">
+    <div class="container">
+        <div class="row">
+            <h2 class="h3-2">Comente sua sugestao ou critica para o</h2>
+
+            
+
+            <div class="col-5 card"> 
+                 <h3 class="h3">DK LOCACOES</h3>            
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    
+                    <!-- <input type="text" name="name" placeholder="Digite seu Nome"> -->
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Digite seu Nome</label>
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu Nome">
+                    </div>
+
+
+                    <!-- <input type="text" name="email" placeholder="Digite seu email" /> -->
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Digite seu Email</label>
+                        <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                      </div>
+
+                    <!-- <textarea name="message"></textarea> -->
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escreva seu Comentário</label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+
+                    <input type="text" name="honeypot" style="display:none">
+
+                    <input type="hidden" name="accessKey" value="1549f795-1916-4988-b3bd-b4ad29c60aa3">
+
+                    <input type="hidden" name="subject" value="Contact us from - example.com" />
+
+                    <input type="hidden" name="replyTo" value="@">
+
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/projetinho%20-%20Copia/index.html">
+
+                    <!-- <input type="submit" value="Submit" /> -->
+                    
+                    <button type="submit" value="submit" class="btn btn-primary">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- chave =  1549f795-1916-4988-b3bd-b4ad29c60aa3 -->
